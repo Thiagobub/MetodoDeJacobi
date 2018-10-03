@@ -9,10 +9,6 @@
 
 using namespace std;
 
-template <typename T> int sgn(T val) {
-    return (T(0) < val) - (val < T(0));
-}
-
 int main()
 {
 /** Criando e Preenchendo a Matriz Principal **/
@@ -51,7 +47,7 @@ int main()
         cout << "\n";
     }
 
-/** Método de Jacobi **/
+/** MÃ©todo de Jacobi **/
     int iteracoes = 0;
     int p = 0, q = 0;
     double max_value = 0;
@@ -60,7 +56,7 @@ int main()
     double cosseno = 0;
     double seno = 0;
 
-    /// Selecionando o Numero de Iterações
+    /// Selecionando o Numero de IteraÃ§Ãµes
     cout << "Quantas Iteracoes Pretende Fazer: ";
     cin >> iteracoes;
 
@@ -80,7 +76,7 @@ int main()
 
     while(iteracoes > 0)
     {
-        /// Calculando o Maior Elemento em Módulo Fora da Diagonal
+        /// Calculando o Maior Elemento em MÃ³dulo Fora da Diagonal
         max_value = A[0][1];
         for(int i = 0; i < tamanho; i++)
         {
@@ -96,7 +92,7 @@ int main()
         }
 
         /// Se o Maior Valor da Matriz A For Menor que Epsilon
-        /// Então Paramos o Programa
+        /// EntÃ£o Paramos o Programa
         if (max_value <= EPSILON)
         {
             break;
@@ -161,7 +157,7 @@ int main()
         }
         cout << endl << endl << endl;*/
 
-        /// Uma Iteração a Menos
+        /// Uma IteraÃ§Ã£o a Menos
         iteracoes--;
     }
 
