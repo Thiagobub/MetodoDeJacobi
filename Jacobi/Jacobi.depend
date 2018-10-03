@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1538448624 source:c:\users\thiago\documents\github\metododejacobi\jacobi\main.cpp
+	<iostream>
+	<stdio.h>
+	<stdlib.h>
+	<math.h>
+	<fstream>
+
